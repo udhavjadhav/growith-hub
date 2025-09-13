@@ -40,7 +40,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-all duration-300 text-lg px-8 py-6"
+              className="border-primary-foreground text-primary hover:bg-primary-foreground hover:text-primary transition-all duration-300 text-lg px-8 py-6"
             >
               Explore Services
             </Button>
