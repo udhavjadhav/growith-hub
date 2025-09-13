@@ -48,13 +48,15 @@ const Hero = () => {
  */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
   {/* Primary Filled Button */}
-  <Button
-    size="lg"
-    className="bg-gradient-to-r from-primary-foreground to-accent-foreground text-white font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300 text-lg px-10 py-6 rounded-xl flex items-center justify-center gap-2"
-  >
-    Get Started Today
-    <ArrowRight className="ml-2 h-5 w-5" />
-  </Button>
+ <Button
+  size="lg"
+  variant="filled"  // ✅ fixed typo
+  className="bg-gradient-to-r from-primary-foreground to-accent-foreground text-white font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300 text-lg px-10 py-6 rounded-xl flex items-center justify-center gap-2"
+>
+  Get Started Today
+  <ArrowRight className="ml-2 h-5 w-5" />
+</Button>
+
 
   {/* Secondary Outlined Button */}
   <Button
