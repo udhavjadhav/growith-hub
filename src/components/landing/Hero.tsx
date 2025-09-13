@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, Users, Trophy } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden mt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden mt-16 sm:mt-22">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary-foreground rounded-full blur-3xl"></div>
@@ -29,7 +29,7 @@ const Hero = () => {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+{/*           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
               size="lg" 
               className="bg-primary-foreground text-primary hover:bg-primary-foreground/90 hover:shadow-hover transition-all duration-300 text-lg px-8 py-6"
@@ -45,6 +45,26 @@ const Hero = () => {
               Explore Services
             </Button>
           </div>
+ */}
+            <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
+  {/* Primary Filled Button */}
+  <Button
+    size="lg"
+    className="bg-gradient-to-r from-primary-foreground to-accent-foreground text-white font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300 text-lg px-10 py-6 rounded-xl flex items-center justify-center gap-2"
+  >
+    Get Started Today
+    <ArrowRight className="ml-2 h-5 w-5" />
+  </Button>
+
+  {/* Secondary Outlined Button */}
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-2 border-primary-foreground text-primary font-semibold hover:bg-primary-foreground hover:text-white hover:scale-105 hover:shadow-md transition-all duration-300 text-lg px-10 py-6 rounded-xl flex items-center justify-center"
+  >
+    Explore Services
+  </Button>
+</div>
 
           {/* Feature Cards */}
           <div className="grid md:grid-cols-3 gap-6 mt-16">
