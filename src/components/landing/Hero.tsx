@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, Users, Trophy } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden mt-16 xs:mt-25">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden mt-24 sm:mt-16 md:mt-12 lg:mt-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary-foreground rounded-full blur-3xl"></div>
@@ -48,14 +48,10 @@ const Hero = () => {
  */}
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
   {/* Primary Filled Button */}
- <Button
-  size="lg"
-  variant="filled"  // ✅ fixed typo
-  className="bg-gradient-to-r from-primary-foreground to-accent-foreground text-white font-semibold hover:scale-105 hover:shadow-lg transition-transform duration-300 text-lg px-10 py-6 rounded-xl flex items-center justify-center gap-2"
->
-  Get Started Today
+          <Button  size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
+               Get Started Today
   <ArrowRight className="ml-2 h-5 w-5" />
-</Button>
+            </Button>
 
 
   {/* Secondary Outlined Button */}
