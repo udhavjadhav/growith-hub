@@ -3,7 +3,7 @@ import { ArrowRight, BookOpen, Users, Trophy } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden mt-16">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-primary-foreground rounded-full blur-3xl"></div>
