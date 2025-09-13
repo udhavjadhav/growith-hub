@@ -17,8 +17,10 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 220 90% 56%;
     --primary-foreground: 210 40% 98%;
+    --primary-light: 220 90% 70%;
+    --primary-dark: 220 90% 40%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -26,17 +28,34 @@ All colors MUST be HSL.
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 268 83% 58%;
+    --accent-foreground: 210 40% 98%;
+    --accent-light: 268 83% 70%;
+
+    --success: 142 71% 45%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 48 96% 53%;
+    --warning-foreground: 222.2 84% 4.9%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 220 90% 56%;
 
     --radius: 0.5rem;
+
+    /* Educational theme gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(220 90% 56%), hsl(268 83% 58%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 90% 56%) 0%, hsl(268 83% 58%) 50%, hsl(142 71% 45%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(210 40% 98%) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(220 90% 56% / 0.1), 0 2px 4px -1px hsl(220 90% 56% / 0.06);
+    --shadow-hover: 0 10px 15px -3px hsl(220 90% 56% / 0.1), 0 4px 6px -2px hsl(220 90% 56% / 0.05);
+    --shadow-glow: 0 0 20px hsl(220 90% 56% / 0.3);
 
     --sidebar-background: 0 0% 98%;
 
