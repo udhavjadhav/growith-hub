@@ -20,27 +20,24 @@ const Contact = () => {
       icon: MapPin,
       title: "Visit Our Centers",
       details: [
-        "Head Office: 123 Education Street, New Delhi - 110001",
-        "Mumbai Branch: 456 Learning Avenue, Mumbai - 400001", 
-        "Bangalore Branch: 789 Knowledge Park, Bangalore - 560001"
+        "Anjangiri CBT Center Jai Bhavani Nager Beside Canol Road, Taroda (kd) Nanded - 431605"
       ]
     },
     {
       icon: Phone,
       title: "Call Us",
       details: [
-        "Main Line: +91 11 2345 6789",
-        "Admissions: +91 11 2345 6790",
-        "Support: +91 11 2345 6791"
+        "Main Line: +91 9767725619",
+        // "Admissions: +91 11 2345 6790",
+        // "Support: +91 11 2345 6791"
       ]
     },
     {
       icon: Mail,
       title: "Email Us",
       details: [
-        "General: info@growith.edu",
-        "Admissions: admissions@growith.edu",
-        "Support: support@growith.edu"
+        "General: growitheducationalinfo@gmail.com",
+        "Support: support@growith.com"
       ]
     },
     {
