@@ -4,7 +4,6 @@ import {
   Twitter,  
   Linkedin, 
   Youtube,
-  Whatsapp, 
   Mail, 
   Phone, 
   MapPin,
@@ -68,7 +67,6 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Whatsapp, href: "#", label: "Whatsapp", color: "hover:bg-blue-500" },
     { icon: Facebook, href: "#", label: "Facebook", color: "hover:bg-blue-500" },
     { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-blue-400" },
     { icon: Instagram, href: "#", label: "Instagram", color: "hover:bg-pink-500" },
