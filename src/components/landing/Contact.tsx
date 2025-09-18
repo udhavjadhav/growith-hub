@@ -129,7 +129,7 @@ const Contact = () => {
                       <Input 
                         id="contact-phone" 
                         type="tel" 
-                        placeholder="+91 9876543210"
+                        placeholder="+91 9767725619"
                         className="focus:ring-primary"
                       />
                     </div>
