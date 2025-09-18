@@ -3,6 +3,7 @@ import {
   Facebook, 
   Twitter,  
   Linkedin, 
+  Instagram,
   Youtube,
   Mail, 
   Phone, 
