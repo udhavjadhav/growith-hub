@@ -1,8 +1,7 @@
 import { 
   GraduationCap, 
   Facebook, 
-  Twitter, 
-  Instagram, 
+  Twitter,  
   Linkedin, 
   Youtube,
   Whatsapp, 
