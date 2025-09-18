@@ -7,6 +7,8 @@ import Testimonials from "@/components/landing/Testimonials";
 import StudentRegistration from "@/components/landing/StudentRegistration";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
+import ScrollToTop from "@/components/ui/scroll-to-top";
+import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
@@ -20,6 +22,8 @@ const Index = () => {
       <StudentRegistration />
       <Contact />
       <Footer />
+      <ScrollToTop />
+      <Toaster />
     </div>
   );
 };

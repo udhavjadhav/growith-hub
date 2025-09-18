@@ -43,7 +43,13 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-primary hover:shadow-glow transition-all duration-300">
+            <Button 
+              className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
+              onClick={() => {
+                const registerSection = document.getElementById('register');
+                registerSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Register Now
             </Button>
           </div>
@@ -75,7 +81,14 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
-              <Button className="bg-gradient-primary w-fit mt-4">
+              <Button 
+                className="bg-gradient-primary w-fit mt-4"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  const registerSection = document.getElementById('register');
+                  registerSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Register Now
               </Button>
             </div>

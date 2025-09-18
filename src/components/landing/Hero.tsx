@@ -48,7 +48,14 @@ const Hero = () => {
  */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
   {/* Primary Filled Button */}
-          <Button size="lg" className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4">
+          <Button 
+            size="lg" 
+            className="bg-gradient-primary hover:shadow-glow transition-all duration-300 text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
+            onClick={() => {
+              const registerSection = document.getElementById('register');
+              registerSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
                 Get Started Today
   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
             </Button>
