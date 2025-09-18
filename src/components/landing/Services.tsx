@@ -70,36 +70,36 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 mb-12">
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-card rounded-2xl p-8 shadow-card hover:shadow-hover transition-all duration-300 group animate-fade-in-up"
+              className="bg-card rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card hover:shadow-hover transition-all duration-300 group animate-fade-in-up"
               style={{animationDelay: `${index * 0.1}s`}}
             >
-              <div className="flex items-start space-x-6">
-                <div className={`${service.color} ${service.textColor} p-4 rounded-xl group-hover:scale-110 transition-transform duration-300`}>
-                  <service.icon className="h-8 w-8" />
+              <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
+                <div className={`${service.color} ${service.textColor} p-3 sm:p-4 rounded-xl group-hover:scale-110 transition-transform duration-300 mx-auto sm:mx-0`}>
+                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8" />
                 </div>
                 
-                <div className="flex-1">
-                  <h3 className="text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
+                <div className="flex-1 text-center sm:text-left">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                  <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
                     {service.description}
                   </p>
                   
-                  <div className="grid grid-cols-2 gap-3 mb-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 mb-4 sm:mb-6">
                     {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center space-x-2">
-                        <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        <span className="text-sm text-muted-foreground">{feature}</span>
+                      <div key={featureIndex} className="flex items-center space-x-2 justify-center sm:justify-start">
+                        <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
+                        <span className="text-xs sm:text-sm text-muted-foreground">{feature}</span>
                       </div>
                     ))}
                   </div>
                   
-                  <Button variant="outline" className="group/btn hover:shadow-card">
+                  <Button variant="outline" className="group/btn hover:shadow-card w-full sm:w-auto">
                     Learn More
                     <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
                   </Button>
@@ -120,7 +120,7 @@ const Services = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-5 gap-6 text-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 text-center">
             {[
               { icon: BookOpen, title: "Study Materials", desc: "Comprehensive resources" },
               { icon: Users, title: "Group Sessions", desc: "Collaborative learning" },
@@ -129,11 +129,11 @@ const Services = () => {
               { icon: GraduationCap, title: "Alumni Network", desc: "Lifetime connections" }
             ].map((item, index) => (
               <div key={index} className="group cursor-pointer">
-                <div className="bg-primary/10 p-4 rounded-xl mb-4 group-hover:bg-primary group-hover:shadow-glow transition-all duration-300">
-                  <item.icon className="h-8 w-8 text-primary group-hover:text-primary-foreground mx-auto" />
+                <div className="bg-primary/10 p-3 sm:p-4 rounded-xl mb-3 sm:mb-4 group-hover:bg-primary group-hover:shadow-glow transition-all duration-300">
+                  <item.icon className="h-6 w-6 sm:h-8 sm:w-8 text-primary group-hover:text-primary-foreground mx-auto" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">{item.title}</h4>
-                <p className="text-sm text-muted-foreground">{item.desc}</p>
+                <h4 className="font-semibold text-foreground mb-1 sm:mb-2 text-sm sm:text-base">{item.title}</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">{item.desc}</p>
               </div>
             ))}
           </div>

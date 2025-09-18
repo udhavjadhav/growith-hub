@@ -86,11 +86,11 @@ const Events = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-12">
           <div className="lg:col-span-2">
-            <div className="flex items-center justify-between mb-8">
-              <h3 className="text-2xl font-semibold text-foreground">Upcoming Events</h3>
-              <Button variant="outline" className="hover:shadow-card">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-6 sm:mb-8 gap-4">
+              <h3 className="text-xl sm:text-2xl font-semibold text-foreground">Upcoming Events</h3>
+              <Button variant="outline" className="hover:shadow-card w-full sm:w-auto">
                 View All Events
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
@@ -104,57 +104,57 @@ const Events = () => {
                   style={{animationDelay: `${index * 0.1}s`}}
                 >
                   <CardContent className="p-0">
-                    <div className="flex flex-col md:flex-row">
+                    <div className="flex flex-col lg:flex-row">
                       {/* Event Image/Gradient */}
-                      <div className={`${event.image} md:w-48 h-48 md:h-auto flex items-center justify-center relative overflow-hidden`}>
+                      <div className={`${event.image} lg:w-48 h-32 sm:h-48 lg:h-auto flex items-center justify-center relative overflow-hidden`}>
                         <div className="absolute inset-0 bg-black/20"></div>
-                        <Calendar className="h-12 w-12 text-white z-10" />
+                        <Calendar className="h-8 w-8 sm:h-12 sm:w-12 text-white z-10" />
                       </div>
                       
                       {/* Event Details */}
-                      <div className="flex-1 p-6">
-                        <div className="flex items-start justify-between mb-4">
-                          <div>
-                            <Badge variant="secondary" className="mb-2">
+                      <div className="flex-1 p-4 sm:p-6">
+                        <div className="flex flex-col sm:flex-row sm:items-start justify-between mb-4 gap-2">
+                          <div className="flex-1">
+                            <Badge variant="secondary" className="mb-2 text-xs">
                               {event.category}
                             </Badge>
-                            <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
+                            <h4 className="text-lg sm:text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors leading-tight">
                               {event.title}
                             </h4>
                           </div>
                           <Badge 
                             variant={event.status === 'upcoming' ? 'default' : 'outline'}
-                            className="ml-4"
+                            className="text-xs self-start"
                           >
                             {event.status === 'upcoming' ? 'Upcoming' : 'Registration Open'}
                           </Badge>
                         </div>
                         
-                        <p className="text-muted-foreground mb-4 line-clamp-2">
+                        <p className="text-muted-foreground mb-4 line-clamp-2 text-sm sm:text-base">
                           {event.description}
                         </p>
                         
-                        <div className="grid sm:grid-cols-3 gap-4 mb-4 text-sm text-muted-foreground">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-4 mb-4 text-xs sm:text-sm text-muted-foreground">
                           <div className="flex items-center space-x-2">
-                            <Calendar className="h-4 w-4" />
+                            <Calendar className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                             <span>{new Date(event.date).toLocaleDateString()}</span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <Clock className="h-4 w-4" />
+                            <Clock className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                             <span>{event.time}</span>
                           </div>
                           <div className="flex items-center space-x-2">
-                            <MapPin className="h-4 w-4" />
+                            <MapPin className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                             <span className="truncate">{event.location}</span>
                           </div>
                         </div>
                         
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                            <Users className="h-4 w-4" />
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                          <div className="flex items-center space-x-2 text-xs sm:text-sm text-muted-foreground">
+                            <Users className="h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                             <span>{event.attendees} attendees expected</span>
                           </div>
-                          <Button size="sm" className="hover:shadow-card">
+                          <Button size="sm" className="hover:shadow-card w-full sm:w-auto">
                             Register Now
                           </Button>
                         </div>
