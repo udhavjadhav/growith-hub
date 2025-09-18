@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-transparent backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-gradient-hero backdrop-blur-md">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -22,7 +22,7 @@ const Header = () => {
             <div className="p-2 bg-gradient-primary rounded-lg">
               <GraduationCap className="h-6 w-6 text-primary-foreground" />
             </div>
-     <span className="text-md sm:text-xl font-bold text-black whitespace-nowrap">
+     <span className="text-md sm:text-xl font-bold text-white whitespace-nowrap">
   GroWith Educational Services
 </span>
 
@@ -61,7 +61,7 @@ const Header = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-foreground"
+              className="text-white"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
