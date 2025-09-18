@@ -301,7 +301,7 @@ const Footer = () => {
             {/* Copyright */}
             <div className="text-center lg:text-right">
               <p className="text-primary-foreground/80 mb-2">
-                © 2024 GroWith Educational Services. All rights reserved.
+                © 2025 GroWith Educational Services. All rights reserved.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-end gap-4 text-xs">
                 <a href="#" className="hover:text-primary-foreground transition-colors flex items-center space-x-1">
