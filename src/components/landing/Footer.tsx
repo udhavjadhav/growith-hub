@@ -55,9 +55,9 @@ const Footer = () => {
   ];
 
   const centers = [
-    { city: "New Delhi", address: "123 Education Street, CP", phone: "+91 11 2345 6789" },
-    { city: "Mumbai", address: "456 Learning Avenue, Andheri", phone: "+91 22 3456 7890" },
-    { city: "Bangalore", address: "789 Knowledge Park, Koramangala", phone: "+91 80 4567 8901" }
+    { city:"Nanded", address: "Anjangiri CBT Center Jai Bhavani Nager Beside Canol Road, Taroda (kd) Nanded - 431605", phone: "+91 9767725619" },
+    // { city: "Mumbai", address: "456 Learning Avenue, Andheri", phone: "+91 22 3456 7890" },
+    // { city: "Bangalore", address: "789 Knowledge Park, Koramangala", phone: "+91 80 4567 8901" }
   ];
 
   const achievements = [
@@ -68,10 +68,10 @@ const Footer = () => {
   ];
 
   const socialLinks = [
+    { icon: Whatsapp, href: "#", label: "Whatsapp", color: "hover:bg-blue-500" },
     { icon: Facebook, href: "#", label: "Facebook", color: "hover:bg-blue-500" },
     { icon: Twitter, href: "#", label: "Twitter", color: "hover:bg-blue-400" },
     { icon: Instagram, href: "#", label: "Instagram", color: "hover:bg-pink-500" },
-    { icon: Linkedin, href: "#", label: "LinkedIn", color: "hover:bg-blue-600" },
     { icon: Youtube, href: "#", label: "YouTube", color: "hover:bg-red-500" }
   ];
 
@@ -240,7 +240,7 @@ const Footer = () => {
         </div>
 
         {/* Newsletter Subscription */}
-        <div className="py-8 border-t border-primary-foreground/10">
+        {/* <div className="py-8 border-t border-primary-foreground/10">
           <div className="bg-gradient-to-r from-primary-foreground/5 to-accent/5 rounded-2xl p-6 sm:p-8">
             <div className="grid md:grid-cols-2 gap-6 items-center">
               <div>
@@ -277,7 +277,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Social Links & Copyright */}
         <div className="py-8 border-t border-primary-foreground/10">
@@ -319,7 +319,7 @@ const Footer = () => {
         </div>
 
         {/* Awards & Certifications */}
-        <div className="py-6 border-t border-primary-foreground/10">
+        {/* <div className="py-6 border-t border-primary-foreground/10">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2 mb-4">
               <Award className="h-5 w-5 text-accent-foreground" />
@@ -343,7 +343,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
