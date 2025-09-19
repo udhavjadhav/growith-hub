@@ -12,8 +12,11 @@ import {
   Target,
   GraduationCap
 } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollAnimation";
 
 const Services = () => {
+  useScrollReveal();
+
   const services = [
     {
       icon: Calendar,
@@ -60,11 +63,11 @@ const Services = () => {
   return (
     <section id="services" className="py-20 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-16">
+          <h2 className="scroll-reveal text-3xl md:text-4xl font-bold text-foreground mb-4">
             Our Services
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="scroll-reveal text-xl text-muted-foreground max-w-3xl mx-auto">
             Comprehensive educational solutions tailored to meet the diverse needs of students, 
             educators, and institutions.
           </p>
@@ -74,12 +77,12 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index}
-              className="bg-card rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card hover:shadow-hover transition-all duration-300 group animate-fade-in-up"
+              className="scroll-reveal bg-card rounded-2xl p-4 sm:p-6 lg:p-8 shadow-card hover:shadow-glow hover:scale-105 transition-all duration-500 group cursor-pointer"
               style={{animationDelay: `${index * 0.1}s`}}
             >
               <div className="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6">
-                <div className={`${service.color} ${service.textColor} p-3 sm:p-4 rounded-xl group-hover:scale-110 transition-transform duration-300 mx-auto sm:mx-0`}>
-                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8" />
+                <div className={`${service.color} ${service.textColor} p-3 sm:p-4 rounded-xl group-hover:scale-110 group-hover:rotate-6 group-hover:shadow-glow transition-all duration-300 mx-auto sm:mx-0`}>
+                  <service.icon className="h-6 w-6 sm:h-8 sm:w-8 group-hover:animate-pulse" />
                 </div>
                 
                 <div className="flex-1 text-center sm:text-left">

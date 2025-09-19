@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, BookOpen, Users, Trophy } from "lucide-react";
+import { useScrollReveal } from "@/hooks/useScrollAnimation";
 
 const Hero = () => {
+  useScrollReveal();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden pt-32 sm:pt-24 md:pt-20 lg:pt-16">
       {/* Background Pattern */}
@@ -12,18 +15,18 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <div className="max-w-4xl mx-auto animate-fade-in-up">
+        <div className="max-w-4xl mx-auto">
           {/* Main Heading */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 leading-tight px-4 sm:px-0">
+          <h1 className="scroll-reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-4 sm:px-0 drop-shadow-lg">
             Empowering Education,
             <br />
-            <span className="bg-gradient-to-r from-accent-foreground to-success-foreground bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent to-success bg-clip-text text-transparent animate-pulse">
               Transforming Futures
             </span>
           </h1>
 
           {/* Subheading */}
-          <p className="text-lg sm:text-xl md:text-2xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed">
+          <p className="scroll-reveal text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 sm:px-0 leading-relaxed drop-shadow-md">
             Comprehensive educational services designed to help students excel in competitive exams, 
             teachers develop their skills, and institutions achieve excellence.
           </p>
@@ -46,7 +49,7 @@ const Hero = () => {
             </Button>
           </div>
  */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+            <div className="scroll-reveal flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
   {/* Primary Filled Button */}
           <Button 
             size="lg" 
@@ -65,30 +68,30 @@ const Hero = () => {
   <Button
     size="lg"
     variant="outline"
-    className="border-2 border-primary-foreground text-primary-foreground font-semibold hover:bg-primary-foreground hover:text-primary hover:scale-105 hover:shadow-md transition-all duration-300 text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-6 rounded-xl flex items-center justify-center"
+    className="border-2 border-white text-white font-semibold hover:bg-white hover:text-primary hover:scale-105 hover:shadow-glow transition-all duration-300 text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-6 rounded-xl flex items-center justify-center backdrop-blur-sm"
   >
     Explore Services
   </Button>
 </div>
 
           {/* Feature Cards */}
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16 px-4 sm:px-0">
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-primary-foreground/20 hover:shadow-glow transition-all duration-300 animate-scale-in text-center">
-              <BookOpen className="h-10 w-10 sm:h-12 sm:w-12 text-primary-foreground mx-auto mb-3 sm:mb-4" />
-              <h3 className="text-lg sm:text-xl font-semibold text-primary-foreground mb-2">Quality Education</h3>
-              <p className="text-sm sm:text-base text-primary-foreground/80">Expert-designed programs and comprehensive learning resources</p>
+          <div className="scroll-reveal grid sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-12 sm:mt-16 px-4 sm:px-0">
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 hover:shadow-glow hover:scale-105 transition-all duration-300 text-center group">
+              <BookOpen className="h-10 w-10 sm:h-12 sm:w-12 text-white mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Quality Education</h3>
+              <p className="text-sm sm:text-base text-white/90">Expert-designed programs and comprehensive learning resources</p>
             </div>
             
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-primary-foreground/20 hover:shadow-glow transition-all duration-300 animate-scale-in text-center" style={{animationDelay: "0.1s"}}>
-              <Users className="h-10 w-10 sm:h-12 sm:w-12 text-primary-foreground mx-auto mb-3 sm:mb-4" />
-              <h3 className="text-lg sm:text-xl font-semibold text-primary-foreground mb-2">Expert Faculty</h3>
-              <p className="text-sm sm:text-base text-primary-foreground/80">Learn from experienced educators and industry professionals</p>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 hover:shadow-glow hover:scale-105 transition-all duration-300 text-center group" style={{animationDelay: "0.1s"}}>
+              <Users className="h-10 w-10 sm:h-12 sm:w-12 text-white mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Expert Faculty</h3>
+              <p className="text-sm sm:text-base text-white/90">Learn from experienced educators and industry professionals</p>
             </div>
             
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-4 sm:p-6 border border-primary-foreground/20 hover:shadow-glow transition-all duration-300 animate-scale-in text-center sm:col-span-2 md:col-span-1" style={{animationDelay: "0.2s"}}>
-              <Trophy className="h-10 w-10 sm:h-12 sm:w-12 text-primary-foreground mx-auto mb-3 sm:mb-4" />
-              <h3 className="text-lg sm:text-xl font-semibold text-primary-foreground mb-2">Proven Results</h3>
-              <p className="text-sm sm:text-base text-primary-foreground/80">Track record of success in competitive exams and placements</p>
+            <div className="bg-white/10 backdrop-blur-md rounded-xl p-4 sm:p-6 border border-white/20 hover:bg-white/20 hover:shadow-glow hover:scale-105 transition-all duration-300 text-center sm:col-span-2 md:col-span-1 group" style={{animationDelay: "0.2s"}}>
+              <Trophy className="h-10 w-10 sm:h-12 sm:w-12 text-white mx-auto mb-3 sm:mb-4 group-hover:scale-110 transition-transform" />
+              <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">Proven Results</h3>
+              <p className="text-sm sm:text-base text-white/90">Track record of success in competitive exams and placements</p>
             </div>
           </div>
         </div>
