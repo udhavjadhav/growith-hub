@@ -49,7 +49,7 @@ const Hero = () => {
             </Button>
           </div>
  */}
-            <div className="scroll-reveal flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-8 sm:mb-12 px-4 sm:px-0">
+            <div className="scroll-reveal flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center mb-6 sm:mb-16 px-4 sm:px-0">
   {/* Primary Filled Button */}
           <Button 
             size="lg" 
@@ -68,7 +68,7 @@ const Hero = () => {
   <Button
     size="lg"
     variant="outline"
-    className="border-2 border-white text-white font-semibold hover:bg-white hover:text-primary hover:scale-105 hover:shadow-glow transition-all duration-300 text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-6 rounded-xl flex items-center justify-center backdrop-blur-sm"
+    className="border-2 border-white bg-white/10 text-white font-bold hover:bg-white hover:text-primary hover:scale-105 hover:shadow-glow transition-all duration-300 text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-6 rounded-xl flex items-center justify-center backdrop-blur-md shadow-lg"
   >
     Explore Services
   </Button>
