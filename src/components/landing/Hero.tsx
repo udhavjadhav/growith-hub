@@ -20,7 +20,7 @@ const Hero = () => {
           <h1 className="scroll-reveal text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight px-4 sm:px-0 drop-shadow-lg">
             Empowering Education,
             <br />
-            <span className="bg-gradient-to-r from-accent to-success bg-clip-text text-transparent animate-pulse">
+            <span className="bg-gradient-to-r from-yellow-300 to-white bg-clip-text text-transparent animate-gradient drop-shadow-lg font-extrabold">
               Transforming Futures
             </span>
           </h1>
